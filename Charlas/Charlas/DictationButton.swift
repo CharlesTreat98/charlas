@@ -45,8 +45,6 @@ struct DictationButton: View {
         .onDisappear {
             stopRecordingIfNeeded()
         }
-        .accessibilityLabel(isRecording ? "Stop dictation" : "Start dictation")
-        .accessibilityHint("Double tap to \(isRecording ? "stop" : "start") voice dictation")
     }
 
     private var isSpeechAvailable: Bool {
